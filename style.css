@@ -503,7 +503,8 @@ text-align:center;
 
 .hire-btn{
 
-display:none;
+display:flex;
+margin: auto;
 
 }
 
@@ -1869,6 +1870,111 @@ color:#aeb4d4;
 .github-btn:hover{
     background:#00d4ff;
     color:#000;
+}
+
+/* ===========================
+        TABLET
+=========================== */
+
+@media (max-width:992px){
+
+    .projects-container{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .project-img img{
+        height:220px;
+    }
+
+}
+
+
+/* ===========================
+        MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .projects{
+        padding:70px 0;
+    }
+
+    .projects-container{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .project-card{
+        width:100%;
+    }
+
+    .project-img img{
+        height:200px;
+        object-fit:cover;
+    }
+
+    .project-content{
+        padding:20px;
+    }
+
+    .project-content h3{
+        font-size:22px;
+    }
+
+    .project-content p{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .project-tags{
+        gap:8px;
+    }
+
+    .project-tags span{
+        font-size:12px;
+        padding:6px 12px;
+    }
+
+    .project-buttons{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .project-buttons a{
+        width:100%;
+    }
+
+}
+
+
+/* ===========================
+      SMALL MOBILE
+=========================== */
+
+@media (max-width:480px){
+
+    .project-img img{
+        height:180px;
+    }
+
+    .project-content{
+        padding:18px;
+    }
+
+    .project-content h3{
+        font-size:20px;
+    }
+
+    .project-content p{
+        font-size:14px;
+    }
+
+    .project-buttons a{
+        padding:12px;
+        font-size:14px;
+    }
+
 }
 /*==============================
         EDUCATION
